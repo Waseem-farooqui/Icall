@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.techstartegies.icall.ViewDoctor">
+
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" android:showAsAction="never" />
+    <item android:id="@+id/action_LogOut" android:title="@string/actions_logout"
+        android:orderInCategory="100" android:showAsAction="never" />
+    <item android:id="@+id/action_GroupChat" android:title="@string/create_group"
+        android:orderInCategory="100" android:showAsAction="never" />
+    <item android:id="@+id/action_JoinGroup" android:title="@string/join_group"
+        android:orderInCategory="100" android:showAsAction="never" />
+    <item android:id="@+id/action_Invite" android:title="@string/invite_user"
+        android:orderInCategory="100" android:showAsAction="never" />
+
+</menu>

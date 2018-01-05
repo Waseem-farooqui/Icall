@@ -1,0 +1,2 @@
+configurations.create("default")
+artifacts.add("default", file('smack-sasl-provided-4.1.3.jar'))

@@ -1,0 +1,229 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/whiteGrey"
+    tools:context="com.techstartegies.icall.AddDoctor">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/layout_boder"
+        android:id="@+id/frameLayout">
+
+
+        <!-- This is CNIC-->
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@color/lightGrey"
+            android:src="@drawable/ic_perm_identity_white_24dp"
+            android:id="@+id/cnic_image"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="85dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="16"
+            android:layout_marginRight="5dp"
+            style="@style/AndroidTextField"
+            android:hint="CNIC"
+            android:id="@+id/cnic"
+            android:layout_toRightOf="@+id/cnic_image"
+            android:layout_toEndOf="@+id/cnic_image"
+            android:layout_alignTop="@+id/cnic_image"
+            android:layout_alignBottom="@+id/cnic_image" />
+
+        <!-- This is UserName-->
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@color/lightGrey"
+            android:src="@drawable/ic_face_white_24dp"
+            android:id="@+id/user_image"
+            android:layout_below="@+id/cnic_image"
+            android:layout_alignLeft="@+id/cnic_image"
+            android:layout_alignStart="@+id/cnic_image"/>
+
+        <EditText
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="16"
+            android:layout_marginTop="1dp"
+            style="@style/AndroidTextField"
+            android:hint="First Name"
+            android:id="@+id/first_name"
+            android:layout_alignBottom="@+id/user_image"
+            android:layout_toRightOf="@+id/user_image"
+            android:layout_alignTop="@+id/user_image"
+            android:editable="false" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_marginLeft="1dp"
+            android:ems="16"
+            android:layout_marginRight="5dp"
+            style="@style/AndroidTextField"
+            android:hint="Last Name"
+            android:id="@+id/last_name"
+            android:layout_alignTop="@+id/first_name"
+            android:layout_toRightOf="@+id/first_name"
+            android:layout_toEndOf="@+id/first_name"
+            android:layout_alignBottom="@+id/first_name" />
+
+        <!-- This is Contact #-->
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@color/lightGrey"
+            android:src="@drawable/ic_phone_white_24dp"
+            android:id="@+id/contact_image"
+            android:layout_marginTop="1dp"
+            android:layout_below="@+id/user_image"
+            android:layout_alignLeft="@+id/user_image"
+            android:layout_alignStart="@+id/user_image" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:layout_marginTop="1dp"
+            android:ems="16"
+            android:layout_marginRight="5dp"
+            style="@style/AndroidTextField"
+            android:hint="Contact#"
+            android:id="@+id/contact"
+            android:layout_below="@+id/first_name"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/contact_image"
+            android:layout_toRightOf="@+id/contact_image"
+            android:layout_toEndOf="@+id/contact_image" />
+
+        <!-- This is Password #-->
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@color/lightGrey"
+            android:src="@drawable/ic_https_white_24dp"
+            android:id="@+id/password_image"
+            android:layout_marginTop="1dp"
+            android:layout_below="@+id/contact"
+            android:layout_alignLeft="@+id/contact_image"
+            android:layout_alignStart="@+id/contact_image" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_marginTop="1dp"
+            android:ems="16"
+            android:layout_marginRight="5dp"
+            style="@style/AndroidTextField"
+            android:hint="Password"
+            android:id="@+id/password"
+            android:layout_below="@+id/contact"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/password_image"
+            android:layout_toRightOf="@+id/password_image"
+            android:layout_toEndOf="@+id/password_image" />
+
+        <!-- This is Specialization #-->
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@color/lightGrey"
+            android:src="@drawable/ic_thumb_up_white_24dp"
+            android:id="@+id/specialization_image"
+            android:layout_marginTop="1dp"
+            android:layout_below="@+id/password"
+            android:layout_alignLeft="@+id/password_image"
+            android:layout_alignStart="@+id/password_image" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_marginTop="1dp"
+            android:ems="16"
+            android:layout_marginRight="5dp"
+            style="@style/AndroidTextField"
+            android:hint="Specialization"
+            android:id="@+id/doctorSpecialization"
+            android:layout_below="@+id/password"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/specialization_image"
+            android:layout_toRightOf="@+id/specialization_image"
+            android:layout_toEndOf="@+id/specialization_image" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@color/lightGrey"
+            android:src="@drawable/ic_assessment_white_24dp"
+            android:id="@+id/level_image"
+            android:layout_marginTop="1dp"
+            android:layout_below="@+id/doctorSpecialization"
+            android:layout_alignLeft="@+id/specialization_image"
+            android:layout_alignStart="@+id/specialization_image" />
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            android:background="@color/lightGrey"
+            android:layout_alignTop="@+id/level_image"
+            android:layout_alignLeft="@+id/doctorSpecialization"
+            android:layout_alignStart="@+id/doctorSpecialization" />
+
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/frameLayout2">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/username"/>
+
+    </FrameLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register Doctor"
+        android:id="@+id/dtr_reg_btn"
+        android:layout_gravity="center"
+        style="@style/RedButton"
+        android:textColor="@color/grey"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/frameLayout2"
+        android:layout_alignEnd="@+id/frameLayout2"
+        android:layout_alignLeft="@+id/frameLayout2"
+        android:layout_alignStart="@+id/frameLayout2" />
+
+</RelativeLayout>

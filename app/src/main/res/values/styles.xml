@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" >
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="FontLogo">
+        <item name="android:textColor">#CC0000</item>
+        <item name="android:capitalize">characters</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">18pt</item>
+    </style>
+    <style name="AndroidTextField">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">#363636</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColorHint">#878787</item>
+        <item name="android:background">@drawable/button_red</item>
+    </style>
+
+    <style name="RedButton">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/button_red</item>
+    </style>
+
+    <style name="GreyText">
+        <item name="android:textColor">#878787</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="SkyBlueText">
+        <item name="android:textColor">#BBBBFF</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+
+
+</resources>

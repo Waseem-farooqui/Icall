@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:padding="8dp" >
+
+    <!-- Thumbnail Image -->
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp" />
+
+    <!-- Doctor Name -->
+    <TextView
+        android:id="@+id/doctorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Doctor Name"
+        android:textSize="@dimen/title"
+        android:textStyle="bold" />
+
+    <!-- Specialization -->
+    <TextView
+        android:id="@+id/dctrSpecialization"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doctorName"
+        android:textColor="@color/medicalRed"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Specialization"
+        android:textSize="@dimen/doctorStatus" />
+
+    <!-- Status -->
+    <TextView
+        android:id="@+id/doctorStatus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dctrSpecialization"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textColor="@color/doctorStatus"
+        android:text="Status"
+        android:textSize="@dimen/doctorStatus" />
+
+    <!-- Connect Button -->
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:textColor="@color/grey"
+        style="@style/RedButton"
+        android:text="Connect"
+        android:textSize="15dp" />
+
+</RelativeLayout>

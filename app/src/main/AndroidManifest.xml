@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.techstartegies.icall" >
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <useu-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/icall"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Main"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".GroupChat"
+            android:label="@string/group_name1" >
+            <intent-filter>
+                <action android:name="android.intent.action.GroupChat" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".DoctorMenu"
+            android:label="@string/doctor_menu" >
+            <intent-filter>
+                <action android:name="android.intent.action.DoctorMenu" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddDoctor"
+            android:label="@string/add_doctor" >
+            <intent-filter>
+                <action android:name="android.intent.action.AddDoctor" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SmsManager"
+            android:label="@string/title_activity_sms_manager" >
+        </activity>
+        <activity
+            android:name=".ViewDoctor"
+            android:label="@string/view_doctor" >
+            <intent-filter>
+                <action android:name="android.intent.action.ViewDoctor" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/view_doctor" >
+            <intent-filter>
+                <action android:name="android.intent.action.MainActivity" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chat"
+            android:label="@string/title_activity_chat" >
+        </activity>
+
+        <service android:name=".ChatService" >
+        </service>
+
+        <activity
+            android:name=".DisplayDialog"
+            android:label="@string/title_activity_display_dialog" >
+        </activity>
+    </application>
+
+</manifest>
